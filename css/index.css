@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(177, 238, 190);
+}
+   
+.bar{
+        background-color: rgb(177, 238, 190);
+     color: rgb(46, 68, 51);
+     padding: 0%;    
+    }
+    
+    .container {
+        display: block;
+        width: 100%; 
+    padding: 14px;
+    }
+    
+header{
+    text-align: center;
+    padding: 14px;
+    color: rgb(51, 44, 48);
+    }
+
+
+    .logo  {
+        font-size: 50px;
+        font-style: italic;
+        text-decoration: none;
+        font-family: "Princess Sofia", cursive;
+        font-weight: 700;
+        text-shadow: -4px 9px 16px rgba(62, 40, 65, 0.63);
+            }
+    
+    .nav-link {
+        list-style-type: none;
+        text-decoration:  none;
+            }
+    
+    .nav-link li{
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+                }
+    
+    .nav-link li a{
+        text-decoration:  none;
+        color: rgb(51, 44, 48);
+        bottom: 5px;
+        font-weight: 700;
+        transform: color 0.4s ease-in-out;
+    }
+
+    .nav-link li a.activo{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-shadow: -3px 4px 23px rgba(0,0,0,0.95);
+    font-weight: 700;
+    }
+
+    .nav-link li a:hover{
+      color:  rgb(0, 0, 0);
+      font-size: 16px;
+      text-shadow: -3px 4px 23px rgba(0,0,0,0.95);
+        font-weight: 700;
+    }
+    
+    
+    .carrousel{
+        width: 100%;
+        padding-bottom: 14px;
+    }
+
+main{
+    padding: 14px;
+        color: rgb(0, 0, 0);
+}
+
+    footer{
+    background-color: rgba(85, 94, 91, 0.274);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(26, 26, 26);
+}
