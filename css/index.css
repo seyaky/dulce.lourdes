@@ -111,19 +111,6 @@ clear: both;
 }
 /* aqui comienza contacto */
 
-.columna{
-    width: 40%;
-    margin-left: 20px;
-}
-
-.left{
-float: left;
-}
-        
-.right{
-float: right;
-}
-
 .formulario label{
     vertical-align: top;
     width: 80px;
@@ -145,13 +132,14 @@ height: 160px;
 resize: none;
 }
 
-.formulario input{
-
-background-color: rgb(199, 197, 197);
+.formulario input[type=submit]{
+width: auto;
+background-color: rgb(148, 148, 148);
 box-shadow: 0 0 10px;
 font-size: 14px;
 font-weight: 600;
 cursor: pointer;
+padding: 14px;
 }
 
 .redes{
@@ -164,6 +152,113 @@ text-decoration: none;
 color: beige;
 }
 
-.boton{
-    padding: 14px;
+
+/* aqui comienza productos */
+
+main section .listado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+    main section article:hover .descripcion{
+        opacity: 100%;
+        transition: 2000ms;
+    }
+    
+main section article:hover{
+        box-shadow : 0px 0px 10px rgb(160, 132, 80);
+        transition: 300ms;
+        cursor: pointer;
+    }
+    
+main article .main-article{
+          padding: 10px;
+          border-top: 1px solid #e7d26b;
+          display: flex;
+          flex-wrap: wrap;
+      }
+    
+main section article {
+          background-color: #000000;
+          margin-bottom: 10px;
+          transition: all;
+      }
+    
+    
+main section article img {
+          margin: 10px;
+          width: 96%;
+      }
+      
+main section .listado {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: auto;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+    padding-left:10px;
+    transition:all;
+}
+
+.descripcion {
+    display:block;
+    opacity:35%;}
+
+/* aqui comienza media query */
+
+/* Tablet */
+
+@media(min-width: 361px){
+
+    .columna{
+        float: none;
+        width: 100%;
+        margin-left: 20px;
+}
+
+.redes{
+    margin-left: 20px;
+    }
+}
+
+/* compu */
+
+@media (min-width: 780px){
+
+main section article{
+    width: 22%;
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top:20px;  
+}
+
+main section article img {
+    width: 90%;
+}
+
+.columna{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.left{
+float: left;
+}
+        
+.right{
+float: right;
+}
+
 }
