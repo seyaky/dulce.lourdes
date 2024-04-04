@@ -19,9 +19,15 @@ header{
     font-family: "Princess Sofia", cursive;
     font-weight: 700;
     text-shadow: -4px 9px 16px rgba(252, 252, 252, 0.281);
-        }
+}
+
+.toplogo{
+    margin-top: 14px;
+    display: inline-block;
+}
 
 /* aqui comienza la barra */
+
 .bar{
     background-color: rgb(0, 0, 0);
     color: rgba(123, 155, 122, 0.808);
@@ -34,16 +40,16 @@ width: 100%;
 padding: 14px;
 }
    
-    .nav-link {
-                list-style-type: none;
-        text-decoration:  none;
-            }
+.nav-link {
+list-style-type: none;
+text-decoration:  none;
+}
     
-    .nav-link li{
-        display: inline-block;
-       width: 23%;
-                text-align: center;
-                }
+.nav-link li{
+display: inline-block;
+width: 23%;
+text-align: center;
+}
     
     .nav-link li a{
         text-decoration:  none;
@@ -70,15 +76,18 @@ padding: 14px;
 
 /* aqui comienza cuerpo del html */
 
- 
+.principal{
+    max-width: 1100px;
+    margin: auto;
+ }
+
 .carrousel{
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
+    margin-top: 10px;
+    }
 
  body{
-line-height: 22px
+line-height: 22px;
  }
 
 main{
@@ -86,13 +95,56 @@ main{
    padding: 14px;
    }
 
-   h2{
-    padding: 10px;
+.titular{
+    text-align: center;
+}
+
+h2{
+padding: 14px;
 }
 
 p{
-    padding: 5px;
+padding: 3px;
 }
+
+.oferta{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page{
+display: flex;
+flex-wrap: wrap;
+}
+
+.paget{
+font-weight: 700;
+font-size: 24px;
+position: relative;
+bottom: 1.8px;
+}
+
+.seguinos{
+color: antiquewhite;
+text-align: center;
+clear: both;
+}
+
+.seguinos ul{
+display: inline-flex;
+padding: 25px;
+list-style-type: none;
+}
+
+.seguinos ul a{
+    text-decoration: none;
+    padding-left: 14px;
+    opacity:56%;
+    }
+
+    .seguinos ul a:hover{
+        opacity:100%;
+        }
 
 footer{
     background-color: #1d1c1c;
@@ -101,21 +153,20 @@ footer{
     color: rgb(247, 247, 247);
     width: 100%;
     padding: 10px 0;
-clear: both;
-    }
+    clear: both;
+}
 
 .holder{
   max-width: 960px;
     margin: 0 auto;
-     
-}
+     }
+
 /* aqui comienza contacto */
 
 .formulario label{
     vertical-align: top;
     width: 80px;
-        display: inline-block;
-    
+        display: inline-block;    
 }
 
 .formulario input, .formulario textarea{
@@ -143,13 +194,27 @@ padding: 14px;
 }
 
 .redes{
-    list-style-type: none;
+        list-style-type: none;
         text-decoration:  none;
 }
 
 .redes li a{
 text-decoration: none;
-color: beige;
+color: rgb(194, 216, 199);
+position: relative;
+bottom: 19px;
+}
+
+.contacto{
+    margin-top: 14px;
+    padding: 14px;
+}
+
+.maps{
+    margin: 0px;
+    width: 90%;
+    height: 200px;
+    padding: 14px;
 }
 
 
@@ -160,31 +225,31 @@ main section .listado {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-
 }
-    main section article:hover .descripcion{
-        opacity: 100%;
-        transition: 2000ms;
-    }
+
+main section article:hover .descripcion{
+opacity: 100%;
+transition: 2000ms;
+}
     
 main section article:hover{
-        box-shadow : 0px 0px 10px rgb(160, 132, 80);
-        transition: 300ms;
-        cursor: pointer;
-    }
+box-shadow : 0px 0px 10px rgb(160, 132, 80);
+transition: 300ms;
+cursor: pointer;
+}
     
 main article .main-article{
-          padding: 10px;
-          border-top: 1px solid #e7d26b;
-          display: flex;
-          flex-wrap: wrap;
-      }
+padding: 10px;
+border-top: 1px solid #e7d26b;
+display: flex;
+flex-wrap: wrap;
+}
     
 main section article {
-          background-color: #000000;
-          margin-bottom: 10px;
-          transition: all;
-      }
+background-color: #000000;
+margin-bottom: 10px;
+transition: all;
+}
     
     
 main section article img {
@@ -213,8 +278,9 @@ main section .listado {
 }
 
 .descripcion {
-    display:block;
+    display: inline-block;
     opacity:35%;}
+    
 
 /* aqui comienza media query */
 
@@ -259,6 +325,8 @@ float: left;
         
 .right{
 float: right;
+margin-top: auto;
 }
+
 
 }
