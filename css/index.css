@@ -147,14 +147,58 @@ list-style-type: none;
         }
 
 footer{
-    background-color: #1d1c1c;
+    border-top: 2px solid #32585a;
+    background-color: #000000;
     font-weight: 400;
     text-align: center;
     color: rgb(247, 247, 247);
     width: 100%;
+    
+    margin: 0 auto;
     padding: 10px 0;
     clear: both;
 }
+
+.linea{
+    color: #32585a;
+    padding: 8px;
+}
+
+.master{
+padding: 8px;
+color: rgb(230, 230, 168);
+}
+
+.master1{
+    list-style-type: none;
+}
+
+.datos{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    padding: 6px;
+}
+
+.naveg{
+    list-style-type: none;
+    text-decoration:  none;
+    color: aliceblue;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.dulce{
+    color: rgb(230, 230, 168);
+    font-style: italic;
+}
+
+.dulce2{
+    font-size: 18px;
+    font-style: italic;
+    margin: 1px;
+}
+
 
 .holder{
   max-width: 960px;
@@ -185,12 +229,19 @@ resize: none;
 
 .formulario input[type=submit]{
 width: auto;
-background-color: rgb(148, 148, 148);
-box-shadow: 0 0 10px;
+border: 0px solid #3f413f;
+background-color: rgb(0, 0, 0);
+box-shadow: 0 0 5px;
 font-size: 14px;
 font-weight: 600;
 cursor: pointer;
-padding: 14px;
+color: white;
+padding: 12px;
+}
+
+.formulario input[type=submit]:hover{
+    background-color: #3f413f;
+    
 }
 
 .redes{
@@ -328,5 +379,20 @@ float: right;
 margin-top: auto;
 }
 
+   
 
+.linea{
+    color: black;
+}
+
+.inferior{
+    width: 24%;
+}
+
+.inferior1{
+    display: inline-flex;
+    justify-content: space-around;
+    max-width: 75%;
+    align-content: center;
+}
 }
