@@ -7,25 +7,58 @@
 
 header{
     margin-top: 14px;
+    display: flex;
+    width: 100%;
+    margin-left: 14px;
+}
+
+.buscar{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+        padding-right: 14px;width: 28%;
+}
+
+.buscar input{
+    display: none;
+    color: #000000;
+    border: 1px solid rgb(197, 255, 159);
+    padding: 0 23px;
+    border-radius: 30px;
+    width: 200px;
+    }
+
+.btn{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: rgb(158, 154, 154);
+    margin-left: -84px;
     text-align: center;
-    padding: 14px;
-    background-color: black;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(207, 207, 207);
+    cursor: pointer;
+}
+.empresa{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-left: -40px;
 }
 
-.logo  {
-    font-size: 50px;
-    color: rgb(220, 224, 223);
-    font-style: italic;
-    text-decoration: none;
-    font-family: "Princess Sofia", cursive;
-    font-weight: 700;
-    text-shadow: -4px 9px 16px rgba(252, 252, 252, 0.281);
+.carrito{
+    width: 28%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
 }
 
-.toplogo{
-    margin-top: 14px;
-    display: inline-block;
-}
+
 
 /* aqui comienza la barra */
 
@@ -238,7 +271,7 @@ resize: none;
 .formulario input[type=submit]{
 width: auto;
 border: 0px solid #3f413f;
-background-color: rgb(0, 0, 0);
+background-color: #3f413f;
 box-shadow: 0 0 5px;
 font-size: 14px;
 font-weight: 600;
@@ -248,8 +281,7 @@ padding: 12px;
 }
 
 .formulario input[type=submit]:hover{
-    background-color: #3f413f;
-    
+    background-color: black;
 }
 
 .redes{
@@ -370,7 +402,7 @@ text-align: center;
 
     .alcarrito a:hover{
         background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 25px rgba(255, 255, 255, 0.719);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.719);
     }
 
     /* aqui comienza ver mas productos */
@@ -424,6 +456,20 @@ text-align: center;
 
 @media (min-width: 780px){
 
+    /* aqui comienza header */
+
+    .buscar input{
+        display: grid;
+    }
+
+    .btn{
+margin-left: -210px;
+    }
+
+    .carrito{
+        margin-left: 84px;
+    }
+
     /* aqui comienza productos responsive */
 
 .content{
@@ -432,6 +478,7 @@ text-align: center;
     max-width: 90%;
     margin-left: 10px;
 }
+
 
 .barra{
     display:inline-block;
