@@ -42,6 +42,11 @@ header{
     border: 2px solid rgb(207, 207, 207);
     cursor: pointer;
 }
+
+.btn:hover{
+    background:rgb(78, 77, 77);
+}
+
 .empresa{
     width: 40%;
     display: flex;
@@ -315,6 +320,10 @@ bottom: 19px;
     display: none;
 }
 
+.barra ul li{
+    padding: 12px;
+}
+
 main section .listado {
     display: flex;
     flex-wrap: wrap;
@@ -327,6 +336,7 @@ main section article:hover{
 box-shadow : 0px 0px 10px rgb(160, 132, 80);
 cursor: pointer;
 transition: 800ms;
+opacity: 65%;
 }
     
 
@@ -509,7 +519,7 @@ main section article{
 
 main section article img {
     width: 96%;
-    margin:3.2px;
+    margin:4.2px;
 }
 
 .articulo h1{
