@@ -28,24 +28,28 @@
 
      <div class="columna right"> 
         
-          <form action="#" class="formulario">
+          <form action="/contacto" method="post" class="formulario">
          <p>
             <label for="">Nombre</label>
-            <input type="text"/>
+            <input type="text" name="nombre"/>
           </p>
           <p>
             <label for="">Email</label>
-            <input type="text"/>
+            <input type="text" name="email"/>
           </p>
           <p>
             <label for="">Teléfono</label>
-            <input type="text"/>
+            <input type="text" name="tel"/>
           </p>
           <p>
             <label for="">Mensaje</label>
-            <textarea name=""></textarea>
+            <textarea name="mensaje"></textarea>
          </p>
          <p><input type="submit" value="Enviar"></p>
+         {{#if message}}
+         <p>{{message}}</p>
+
+         {{/if}}
          </form>
       </div>    
 
