@@ -1,8 +1,17 @@
 var createError = require('http-errors');
 var express = require('express');
+var app = express();
+
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+
 
 require('dotenv').config();
 
@@ -11,9 +20,9 @@ var usersRouter = require('./routes/users');
 var productosRouter = require('./routes/productos');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
+// verificar ruta producto router
+const routerProducto = require('./routes/productoRouter');
 
-
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +39,8 @@ app.use('/users', usersRouter);
 app.use('/productos', productosRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/contacto', contactoRouter);
+// asiganar pagina a producto router
+app.use("#", routerProducto);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

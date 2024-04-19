@@ -13,9 +13,8 @@
 <script src="https://kit.fontawesome.com/c753b6c1ce.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        
+<header>
+        <div class="logos">
         <section class="buscar">
             <div class="btn">
                 <i class="fas fa-search icon"></i>
@@ -27,13 +26,13 @@
             <a href="/" class="logo holder"><img src="images/logo.jpg" alt="logo" width="220"></a>
         </section>
         
-        <section class="carrito">       
-            <img  src="images/carrito.png" alt="shop" width="45">
+        <section class="carrito">
+            <div class="btn2">      
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div> 
           </section>
-    
-    </header>
-         
-    <nav class="bar">
+          </div>
+ <nav class="bar">
         <div class="container">
              <ul class="nav-link holder">
              <li><a class= "{{#if isHome}}activo{{/if}}" href="/">INICIO</a></li>
@@ -42,7 +41,10 @@
              <li><a class= "{{#if isContacto}}activo{{/if}}" href="/contacto">CONTACTO</a></li>
              </ul>
            </div>
-      </nav>   
+      </nav>       
+</header>
+<body>
+             
     {{{body}}}
 
     <div class="seguinos">
