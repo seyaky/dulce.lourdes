@@ -1,51 +1,34 @@
 [
  {
   "id": 1,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000001
+  "descripcion": "Cheesacake",
+  "descuento": "10% Off",
+  "precio": 8500,
+  "detalle": "Cheesecake cocido con base de vainilla y cobertura de dulce casero de frutos rojos." 
  },
+
  {
-  "id": 2,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000002
- },
- {
-  "id": 3,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000003
- },
- {
-  "id": 4,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000004
- },
- {
-  "id": 5,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000005
- },
- {
-  "id": 6,
-  "marca": "",
-  "modelo": "",
-  "precio": 0
- },
- {
-  "id": 7,
-  "marca": "Crevrolet",
-  "modelo": "Corsa",
-  "precio": "200000"
- },
- {
-  "id": 8,
-  "marca": "Chevrolet",
-  "modelo": "Spin",
-  "precio": "3000000"
- }
+    "id": 2,
+    "descripcion": "Brownie",
+    "descuento": "20% Off",
+    "precio": 7500,
+    "detalle": "Brownies de chocolate súper humedos por 1/2 docena! Los podes pedir con o sin nuez."
+   },
+
+   {
+    "id": 3,
+    "descripcion": "Alfajores Maizena",
+    "descuento": "15% Off",
+    "precio": 6500,
+    "detalle": "Alfajores de Maizena rellenos de dulce de leche por 1 docena"
+   },
+
+   {
+    "id": 4,
+    "descripcion": "Merengue",
+    "descuento": "10% Off",
+    "precio": 10500,
+    "detalle": "Base de merengue de almendra, con relleno de ganache de chocolate, con una cubierta de crema chantilly."  
+   }
  
 ]

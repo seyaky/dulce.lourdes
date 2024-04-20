@@ -10,22 +10,24 @@ const productosController = {
     },
 
     create: (req,res)=>{ 
-        res.render('productos/creacionProd');
+        res.render('/productos/creacionProd');
     },
 
     stock: (req, res) =>{
-        const {marca, modelo, precio} = req.body;
+        console.log(req.file)
+        const {descripcion, descuento, precio, detalle} = req.body;
         const nuevoProduct = {
             id: productos.length + 1,
-            marca, 
-            modelo, 
-            precio
+            descripcion, 
+            descuento, 
+            precio,
+            
         };
 
         try {
             productos.push(nuevoProduct);
             fs.writeFileSync(productosFilePath, JSON.stringify(productos,  null, " "));
-            res.redirect("/")
+            res.redirect("/productos")
         }
         catch(err){
             console.log("Error al guardar el producto");

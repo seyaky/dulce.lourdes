@@ -8,13 +8,13 @@
 <body>
     <form action="/create" method="POST">
         <div>
-            <label for="marca">Marca: </label>
-            <input type="text" name="marca" id="marca" placeholder="Ingresar Marca"/>
+            <label for="descripcion">Descripcion: </label>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Ingresar descripcion"/>
         </div>
         <br>
         <div>
-            <label for="modelo">Modelo: </label>
-            <input type="text" name="modelo" id="modelo" placeholder="Ingresar Modelo"/>
+            <label for="descuento">Descuento: </label>
+            <input type="text" name="descuento" id="descuento" placeholder="Ingresar descuento"/>
         </div>
         <br>
         <div>
@@ -23,13 +23,18 @@
         </div>
         <br>
         <div>
-            <button type="submit" value="Guardar Producto">Crear Vehiculo</button>
+            <label for="detalle">Detalle: </label>
+            <input type="text" name="detalle" id="detalle" placeholder="Ingresar detalle"/>
+        </div>
+        <br>
+        <div>
+            <button type="submit" value="Guardar Producto">Crear Producto</button>
         </div>
         <br>
     </form>
     <div>
         {{!-- crear home para admin --}}
-        <a href="#">Home</a>
+        <a href="/views/productos.hbs">Productos</a>
     </div>
     
 </body>
