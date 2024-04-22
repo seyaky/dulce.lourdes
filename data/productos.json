@@ -6,7 +6,6 @@
   "precio": 8500,
   "detalle": "Cheesecake cocido con base de vainilla y cobertura de dulce casero de frutos rojos." 
  },
-
  {
     "id": 2,
     "descripcion": "Brownie",
@@ -14,7 +13,6 @@
     "precio": 7500,
     "detalle": "Brownies de chocolate súper humedos por 1/2 docena! Los podes pedir con o sin nuez."
    },
-
    {
     "id": 3,
     "descripcion": "Alfajores Maizena",
@@ -22,13 +20,18 @@
     "precio": 6500,
     "detalle": "Alfajores de Maizena rellenos de dulce de leche por 1 docena"
    },
-
    {
     "id": 4,
     "descripcion": "Merengue",
     "descuento": "10% Off",
     "precio": 10500,
     "detalle": "Base de merengue de almendra, con relleno de ganache de chocolate, con una cubierta de crema chantilly."  
-   }
- 
+   },
+   {
+   "id": 5,
+   "descripcion": "Letter Cake",
+   "descuento": "",
+   "precio": 15500,
+   "detalle": "Base de Brownie o masa sable, con relleno de ganache de chocolate, con una cubierta de crema merengue italiano, mas cookies y chocolates a eleccion."  
+     }
 ]

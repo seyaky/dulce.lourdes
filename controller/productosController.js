@@ -1,8 +1,8 @@
 const fs = require( 'fs' );
 const path = require('path');
 
-const productosFilePath = path.join( __dirname, '../data/productos.json' ) ;
-const productos = JSON.parse( fs.readFileSync( productosFilePath , 'utf8')); 
+const productosFilePath = path.join(__dirname, '../data/productos.json' ) ;
+const productos = JSON.parse(fs.readFileSync(productosFilePath , 'utf8')); 
 
 const productosController = {
     list: (req, res) => {
@@ -21,10 +21,11 @@ const productosController = {
             descripcion, 
             descuento, 
             precio,
-            
+            detalle 
         };
 
-        try {
+     
+    try {
             productos.push(nuevoProduct);
             fs.writeFileSync(productosFilePath, JSON.stringify(productos,  null, " "));
             res.redirect("/productos")
@@ -34,10 +35,11 @@ const productosController = {
             console.error(err);
             res.status(500).send("Error al guardar el producto");
         }
-       
-    }, 
-
-   
+    
+    
+    },
 }
+
+
 
 module.exports = productosController;

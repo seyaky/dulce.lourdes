@@ -10,7 +10,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const routerProducto = require('./routes/productoRouter');
-app.use("/productos", routerProducto);
+app.use("/productos/", routerProducto);
+
+
 
 require('dotenv').config();
 
@@ -19,7 +21,6 @@ var usersRouter = require('./routes/users');
 var productosRouter = require('./routes/productos');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
-
 
 
 // view engine setup
