@@ -28,29 +28,48 @@
 
      <div class="columna right"> 
         
-          <form action="/contacto" method="post" class="formulario">
-         <p>
-            <label for="">Nombre</label>
-            <input type="text" name="nombre"/>
-          </p>
-          <p>
-            <label for="">Email</label>
-            <input type="text" name="email"/>
-          </p>
-          <p>
-            <label for="">Teléfono</label>
-            <input type="text" name="tel"/>
-          </p>
-          <p>
-            <label for="">Mensaje</label>
-            <textarea name="mensaje"></textarea>
-         </p>
-         <p><input type="submit" value="Enviar"></p>
-         {{#if message}}
-         <p>{{message}}</p>
-
-         {{/if}}
-         </form>
+    <form id="form" class="formulario">
+      <p>
+      <label for="Nombre">Nombre</label>
+    <input type="text" name="Nombre" id="Nombre"/>
+    </p>
+  
+  <p>
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="Email"/>
+  </p>
+  <p>
+    <label for="Telefono">Telefono</label>
+    <input type="text" name="Telefono" id="Telefono">
+</p>
+ <p>
+    <label for="Mensaje">Mensaje</label>
+   <textarea type="text" name="mensaje" id="Mensaje"></textarea>
+  </p>
+    <p><input type="submit" id="button" value="Enviar"></p>
+    </form>
       </div>    
+<script>
+  const btn = document.getElementById('button');
 
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_e7nzpke';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Mensaje Enviado Correctamente');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+    form.reset();
+});
+</script>
 </main>

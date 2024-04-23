@@ -13,7 +13,6 @@ const routerProducto = require('./routes/productoRouter');
 app.use("/productos/", routerProducto);
 
 
-
 require('dotenv').config();
 
 var indexRouter = require('./routes/index');
