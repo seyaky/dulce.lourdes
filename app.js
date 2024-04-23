@@ -21,7 +21,6 @@ var productosRouter = require('./routes/productos');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -39,7 +38,7 @@ app.use('/nosotros', nosotrosRouter);
 app.use('/contacto', contactoRouter);
 
 app.get("/", (req, res) => {
-  res.render(__dirname + "/views/productos.hbs")
+  res.render(__dirname + '/views/productos.hbs')
 })
 
 // catch 404 and forward to error handler
