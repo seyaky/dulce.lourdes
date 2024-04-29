@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const routerProducto = require('./routes/productoRouter');
 app.use("/productos/", routerProducto);
 
+app.use(express.static('public'));
+
 
 require('dotenv').config();
 
@@ -20,6 +22,9 @@ var usersRouter = require('./routes/users');
 var productosRouter = require('./routes/productos');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
+
+var adminRouter= require('./routes/admin');
+app.use("/products/admin/", adminRouter);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

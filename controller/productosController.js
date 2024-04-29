@@ -2,7 +2,7 @@ const fs = require( 'fs' );
 const path = require('path');
 
 const productosFilePath = path.join(__dirname, '../data/productos.json' ) ;
-const productos = JSON.parse(fs.readFileSync(productosFilePath , 'utf8')); 
+const productos = JSON.parse( fs.readFileSync(productosFilePath , 'utf8')); 
 
 const productosController = {
     list: (req, res) => {
@@ -10,7 +10,7 @@ const productosController = {
     },
 
     create: (req,res)=>{ 
-        res.render('/productos/creacionProd');
+        res.render('/products/admin');
     },
 
     stock: (req, res) =>{
@@ -27,7 +27,7 @@ const productosController = {
      
     try {
             productos.push(nuevoProduct);
-            fs.writeFileSync(productosFilePath, JSON.stringify(productos,  null, " "));
+            fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
             res.redirect("/productos")
         }
         catch(err){
@@ -39,7 +39,5 @@ const productosController = {
     
     },
 }
-
-
 
 module.exports = productosController;
